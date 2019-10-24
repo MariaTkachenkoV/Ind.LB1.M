@@ -55,6 +55,11 @@ namespace Ind.LB1.M
                 double a = double.Parse(Console.ReadLine());
                 Console.WriteLine("Введите перемнную b");
                 double b = double.Parse(Console.ReadLine());
+                if (x*m <= 0)
+                {
+                    Console.WriteLine("Введено неверное значение");
+                    Environment.Exit(0);
+                }
                 double z = (Math.Sin(x) / (Math.Sqrt(Math.Pow(m, 2) + Math.Pow(Math.Sin(x), 2)))) - (с * m *( Math.Log(m*x, Math.E)));
                 if((Math.Pow(m, 2) + Math.Pow(Math.Sin(x), 2))<0)
                 {
