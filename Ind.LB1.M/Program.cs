@@ -55,7 +55,8 @@ namespace Ind.LB1.M
                 double a = double.Parse(Console.ReadLine());
                 Console.WriteLine("Введите перемнную b");
                 double b = double.Parse(Console.ReadLine());
-                if (x*m <= 0)
+                if (x == 0 &&
+                    m == 0)
                 {
                     Console.WriteLine("Введено неверное значение");
                     Environment.Exit(0);
